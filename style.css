@@ -25,7 +25,7 @@ header .add-bookmark-btn{
     padding: 8px 24px;
     display: inline-block;
     text-align: center;
-    margin: 8px auto;
+    margin: 8px 16px;
     cursor: pointer;
     user-select: none;
     letter-spacing: 5px;
