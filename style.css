@@ -91,6 +91,8 @@ header .add-bookmark-btn:active{
     max-width: 95%;
     background-color: whitesmoke;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.show-anime{
     animation: showModal 1s;
 }
 @keyframes showModal {
@@ -99,6 +101,19 @@ header .add-bookmark-btn:active{
     }
     to{
         transform: scale(1);
+    }
+}
+
+
+.close-anime{
+    animation: closeModal .5s;
+}
+@keyframes closeModal {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
     }
 }
 .modal-container .modal .modal-header{
