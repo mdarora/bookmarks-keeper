@@ -74,6 +74,87 @@ header .add-bookmark-btn:active{
     text-decoration: underline;
 }
 
+
+.modal-container{
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color: var(--button-background-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.show-modal{
+    display: flex;
+}
+.modal-container .modal{
+    width: 500px;
+    max-width: 95%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    animation: showModal 1s;
+}
+@keyframes showModal {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.modal-container .modal .modal-header{
+    color: #fff;
+    font-family: var(--button-font);
+    letter-spacing: 5px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+.modal-container .modal .modal-header i{
+    cursor: pointer;
+}
+.modal-container .modal .modal-content{
+    padding:16px;
+}
+.modal-container .modal .modal-content .form-group{
+    margin-bottom: 8px;
+}
+.modal-container .modal .modal-content label{
+    display: block;
+    margin: 0;
+    color: var(--primary-color);
+}
+.modal-container .modal .modal-content input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+.modal-container .modal .modal-content .save-btn{
+    margin-top: 16px;
+}
+.modal-container .modal .modal-content .save-btn button{
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 28px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+}
+.modal-container .modal .modal-content .save-btn button:hover{
+    filter: brightness(110%);
+}
+.modal-container .modal .modal-content .save-btn button:active{
+    transform: var(--button-scaling);
+}
+.modal-container .modal .modal-content .save-btn button:focus, .modal-container .modal .modal-content input:focus{
+    outline: none;
+}
+
+
+
+
 @media screen and (max-width:500px) {
     .bookmarks{
         flex-direction: column;

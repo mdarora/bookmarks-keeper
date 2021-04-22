@@ -12,20 +12,21 @@
     <header>
         <h1 class="add-bookmark-btn" id="add-bookmark" title="Add new Bookmark">Add Bookmark</h1>
     </header>
+
     <main>
         <section class="bookmarks">
             <div class="bookmark">
                 <i class="fa fa-close" id="delete-bookmark" title="Delete Bookmark"></i>
                 <div class="site">
                     <img src="./MD-logo.png" width="20" alt="icon">
-                    <a href="https://github.com/mdarora" target="_blank">mdarora Github</a>
+                    <a href="https://github.com/mdarora" target="_blank">mdarora @ Github</a>
                 </div>
             </div>
             <div class="bookmark">
                 <i class="fa fa-close" id="delete-bookmark" title="Delete Bookmark"></i>
                 <div class="site">
                     <img src="./MD-logo.png" width="20" alt="icon">
-                    <a href="https://github.com/mdarora" target="_blank">mdarora Github</a>
+                    <a href="https://github.com/mdarora" target="_blank">Github@mdarora</a>
                 </div>
             </div>
             <div class="bookmark">
@@ -37,6 +38,30 @@
             </div>
         </section>
     </main>
+
+    <section class="modal-container" id="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+                <i class="fa fa-close" id="close-modal"></i>
+            </div>
+            <div class="modal-content">
+                <form class="modal-form" id="modal-form">
+                    <div class="form-group">
+                        <label for="website-name"> Website name</label>
+                        <input type="text" id="website-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="website-name"> Website URL</label>
+                        <input type="text" id="website-url">
+                    </div>
+                    <div class="save-btn">
+                        <button type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     
 
 
